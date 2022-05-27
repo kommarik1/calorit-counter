@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+  <title>КальКалоро</title>
+  <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/css/mui.css" rel="stylesheet" type="text/css">
+  <link href="static/css/auto-complete.css" rel="stylesheet" type="text/css">
+  <link href="static/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="static/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <div class="mui--bg-danger" style="height:10px;"></div>
+  <div id="content-wrapper" class="mui--text-center">
+
+    <h1 class="mui--text-display1"><img id="logo" src="static/img/le_bigmac.png" width="111" height="111" alt="Картинка вкусной еды">Калькулятор расчета калорий</h1>
+    <div class="mui-divider"></div>
+    <br>
+
+    <form id="foodPickerForm" class="mui-form">
+      <div class="mui-textfield">
+        <input name="foodPicker" id="foodPicker" placeholder='Выберете продукт'>
+      </div>
+      <button type="submit" class="mui-btn mui-btn--primary" type="button">Добавить в список</button>
+    </form>
+
+    <br><div class="mui--text-body2" id="foodInfo"></div>
+
+    <div class="mui-divider"></div><br>
+
+    <div id="foodBalanceWrapper">
+      <table id="foodBalanceTable" class="mui-table mui-panel">
+        <thead>
+          <th>Сводка</th>
+          <th colspan="2">кКал</th>
+        </thead>
+        <tbody id="foodBalanceBody"></tbody>
+      </table>
+      <p id="totalWrapper" class="mui--text-display1">Вы употребили <span class="bold" id="total"></span> калорий</p>
+    </div>
+
+  </div>
+
+    <div class="container" >
+        <h2>Калькулятор Индекса Массы Тела (ИМТ)</h2>
+
+        <p>Рост (см)</p>
+
+        <input type="text" class="field" id="height">
+
+        <p>Вес (кг)</p>
+
+        <input type="text" class="field" id="weight">
+
+        <button id="btn"  type="submit" class="mui-btn mui-btn--primary" type="button">Подсчитать</button>
+
+        <div id="result">
+            <div style="width: 70%; height: 90px; border: none; margin:auto;"></div>
+    </div>
+
+  <script src="static/js/mui.js"></script>
+  <script src="static/js/auto-complete.js"></script>
+  <script src="static/js/food.js"></script>
+  <script src="static/js/handler.js"></script>
+
+</body>
+</html>
